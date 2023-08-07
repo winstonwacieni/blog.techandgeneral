@@ -11,7 +11,7 @@
         <div class="container">
             <!-- Begin Logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/favicon.svg" alt="logo">
+                <img src="{{ asset('img/favicon.svg') }}" alt="logo">
             </a>
             <!-- End Logo -->
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -127,7 +127,7 @@
                     <div class="row">
                         <div class="col-md-5 wrapthumbnail">
                             <a href="post.html">
-                                <div class="thumbnail" style="background-image:url(assets/img/demopic/uganda.png);">
+                                <div class="thumbnail" style="background-image:url({{ asset('img/demopic/uganda.png') }});">
                                 </div>
                             </a>
                         </div>
@@ -158,7 +158,7 @@
                     <div class="row">
                         <div class="col-md-5 wrapthumbnail">
                             <a href="post.html">
-                                <div class="thumbnail" style="background-image:url(assets/img/demopic/4.jpg);">
+                                <div class="thumbnail" style="background-image:url({{ asset('img/demopic/4.jpg') }});">
                                 </div>
                             </a>
                         </div>
@@ -200,7 +200,7 @@
                 <!-- begin post -->
                 <div class="card">
                     <a href="post.html">
-                        <img class="img-fluid" src="assets/img/demopic/coding.jpg" alt="A guy coding">
+                        <img class="img-fluid" src="{{ asset('img/demopic/coding.jpg') }}" alt="A guy coding">
                     </a>
                     <div class="card-block">
                         <h2 class="card-title"><a href="post.html">"Conquering the Enigma: My Fascination with an Obscure Math Problem</a></h2>
@@ -224,7 +224,7 @@
                 <!-- begin post -->
                 <div class="card">
                     <a href="post.html">
-                        <img class="img-fluid" src="assets/img/demopic/voices-2.jpg" alt="A swahili Man">
+                        <img class="img-fluid" src="{{ asset('img/demopic/voices-2.jpg') }}" alt="A swahili Man">
                     </a>
                     <div class="card-block">
                         <h2 class="card-title"><a href="post.html">Voices of the Unseen: Preserving Endangered Languages in the Digital Age</a></h2>
@@ -248,7 +248,7 @@
                 <!-- begin post -->
                 <div class="card">
                     <a href="post.html">
-                        <img class="img-fluid" src="assets/img/demopic/colors.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('img/demopic/colors.jpg') }}" alt="">
                     </a>
                     <div class="card-block">
                         <h2 class="card-title"><a href="post.html">The Psychology of Colors in Web Design</a></h2>
@@ -272,7 +272,7 @@
                 <!-- begin post -->
                 <div class="card">
                     <a href="post.html">
-                        <img class="img-fluid" src="assets/img/demopic/8.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('img/demopic/8.jpg') }}" alt="">
                     </a>
                     <div class="card-block">
                         <h2 class="card-title"><a href="post.html">Thinking outside the box can help you prosper</a></h2>
@@ -296,7 +296,7 @@
                 <!-- begin post -->
                 <div class="card">
                     <a href="post.html">
-                        <img class="img-fluid" src="assets/img/demopic/9.jpg" alt="Real Estate Sideview">
+                        <img class="img-fluid" src="{{ asset('img/demopic/9.jpg') }}" alt="Real Estate Sideview">
                     </a>
                     <div class="card-block">
                         <h2 class="card-title"><a href="post.html">10 Things you should know about choosing your house</a></h2>
@@ -320,7 +320,7 @@
                 <!-- begin post -->
                 <div class="card">
                     <a href="post.html">
-                        <img class="img-fluid" src="assets/img/demopic/10.jpg" alt="Welcoming gate">
+                        <img class="img-fluid" src="{{ asset('img/demopic/10.jpg') }}" alt="Welcoming gate">
                     </a>
                     <div class="card-block">
                         <h2 class="card-title"><a href="post.html">Visiting the world means learning cultures</a></h2>
