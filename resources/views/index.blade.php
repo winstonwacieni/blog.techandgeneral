@@ -1,6 +1,7 @@
+@extends('layouts.main')
 @section('content')
 
-    @extends('layouts.main')
+    
 
 
     <!-- Begin Site Title
