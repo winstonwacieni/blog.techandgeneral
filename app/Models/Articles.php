@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Articles extends Model
 {
     use HasFactory;
+
+    public $fillable = ['title', 'excerpt', 'block_quote', 'body', 'image', 'thumbnail'];
+
+    public $table = 'articles';
 }
