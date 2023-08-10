@@ -1,3 +1,4 @@
+## Things implemented
 Created Articles migration, seeder and factory file
         - This automates the process of creating dummy data to use for the site
 Created Single Article web route
@@ -10,4 +11,20 @@ Added animated gifs
         - Improve intuitiveness of the site
 Added component for title
         - To make the title dynamic
+
+
+## Discussion prompts
+    - An article belongsTo a category. On the index page where should the category
+      be placed to Improve on aesthestics.
+    - Improve on the Logo
+    - Should the user upload two different names or just one
+
+## Relationahips
+Category<---->Post
+  - A post belongsTo a category
+  - A category hasMany posts
+
+Author<----->Post
+  - An author hasMany posts
+  - A post belongsTo one author
 

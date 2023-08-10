@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,12 +17,14 @@ class ArticlesFactory extends Factory
      */
     public function definition(): array
     {
+        $authors = collect(User::all()->modelKeys());
         return [
             'title' => $this->faker->text(50),
             'excerpt' => $this->faker->paragraph(),
             'body' => collect($this->faker->paragraphs(14))->map(fn($item) => "<p>{$item}</p>")->implode(''),
             'block_quote' => $this->faker->paragraph(),
             'slug' => $this->faker->slug(),
+            'user_id' => $authors->random()
         ];
     }
 }
