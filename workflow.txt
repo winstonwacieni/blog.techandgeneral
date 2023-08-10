@@ -8,4 +8,6 @@ Created component for fixed left share on post page
         - Allow breakdown of code into components
 Added animated gifs
         - Improve intuitiveness of the site
+Added component for title
+        - To make the title dynamic
 

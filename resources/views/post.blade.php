@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', ' | ' . $article->title)
+
 @section('content')
 
     <!-- Begin Article
