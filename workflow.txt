@@ -4,4 +4,8 @@ Created Single Article web route
         - This manages the viewing of a single Article
 Installed Stevebaumans purify
         - Putify data from database. Avoid xss exploits
+Created component for fixed left share on post page
+        - Allow breakdown of code into components
+Added animated gifs
+        - Improve intuitiveness of the site
 
