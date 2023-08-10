@@ -1,6 +1,9 @@
 <?php
 
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\{
+    ArticlesController,
+    AuthorController,
+};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::group(['as' => 'article.'], function () {
     Route::get('/', [ArticlesController::class, 'index'])->name('index');
     Route::get('/article/{slug}', [ArticlesController::class, 'show'])->name('show');
+});
+
+Route::group(['as' => 'author.'], function () {
+    Route::get('author/{id}', [AuthorController::class, 'show'])->name('show');
 });
 
 Auth::routes();

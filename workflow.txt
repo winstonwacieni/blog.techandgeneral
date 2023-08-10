@@ -11,6 +11,8 @@ Added animated gifs
         - Improve intuitiveness of the site
 Added component for title
         - To make the title dynamic
+Created view author page
+        - To view the author's specific articles
 
 
 ## Discussion prompts
@@ -19,6 +21,8 @@ Added component for title
     - Improve on the Logo
     - Should the user upload two different names or just one
     - How will the username be generated (Should the author input it himself or should we use the name entered)
+    - How will the articles be paginated on the index page (Implement loader like pinterest or youtube)
+    - How to decide the criteria for choosing the featured article
 
 ## Relationahips
 Category<---->Post

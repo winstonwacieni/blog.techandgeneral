@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', ' | ' . $article->title)
+@section('title', $article->title)
 
 @section('content')
 
