@@ -12,7 +12,13 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        //
+        //Retrieve all articles in the database and display them in the view
+        // To be displayed in the ALL ARTICLES section of the page
+        $articles = Articles::all();
+
+        return view('index', [
+            'articles' => $articles
+        ]);
     }
 
     /**
@@ -36,7 +42,7 @@ class ArticlesController extends Controller
      */
     public function show(Articles $articles)
     {
-        //
+
     }
 
     /**

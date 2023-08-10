@@ -17,10 +17,11 @@ class ArticlesFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->text(10),
+            'title' => $this->faker->text(50),
             'excerpt' => $this->faker->paragraph(),
             'body' => collect($this->faker->paragraphs(14))->map(fn($item) => "<p>{$item}</p>")->implode(''),
             'block_quote' => $this->faker->paragraph(),
+            'slug' => $this->faker->slug(),
         ];
     }
 }

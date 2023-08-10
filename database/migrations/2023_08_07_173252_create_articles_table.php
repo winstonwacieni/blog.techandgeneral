@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('excerpt');
             $table->text('block_quote');
             $table->text('body');
+            $table->text('slug');
             $table->string('image')->nullable();
             $table->string('thumbnail')->nullable();
             $table->timestamps();

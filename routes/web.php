@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticlesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::group(['as' => 'article'], function () {
+    Route::get('/', [ArticlesController::class, 'index'])->name('index');
+    Route::get('/article/{slug}', [ArticlesController::class, 'show'])->name('show');
 });
 
 Auth::routes();
