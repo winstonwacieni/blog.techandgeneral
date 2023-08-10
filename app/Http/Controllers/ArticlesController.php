@@ -42,7 +42,7 @@ class ArticlesController extends Controller
      */
     public function show($slug)
     {
-        $article = Articles::where('slug', $slug)->first();
+        $article = Articles::with('author')->where('slug', $slug)->first();
 
         return view('post', [
            'article' => $article

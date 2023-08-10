@@ -18,6 +18,7 @@ Added component for title
       be placed to Improve on aesthestics.
     - Improve on the Logo
     - Should the user upload two different names or just one
+    - How will the username be generated (Should the author input it himself or should we use the name entered)
 
 ## Relationahips
 Category<---->Post
