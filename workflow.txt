@@ -1,3 +1,7 @@
-1. Created Articles migration, seeder and factory file
+Created Articles migration, seeder and factory file
         - This automates the process of creating dummy data to use for the site
+Created Single Article web route
+        - This manages the viewing of a single Article
+Installed Stevebaumans purify
+        - Putify data from database. Avoid xss exploits
 

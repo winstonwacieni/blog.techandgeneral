@@ -163,12 +163,12 @@
                 <!-- begin post -->
                 @foreach($articles as $article)
                     <div class="card">
-                        <a href="{{ route('articleshow', ['slug' => $article->slug]) }}">
+                        <a href="{{ route('article.show', ['slug' => $article->slug]) }}">
                             <img class="img-fluid" src="{{ asset('img/demopic/coding.jpg') }}" alt="A guy coding">
                         </a>
                         <div class="card-block">
                             <h2 class="card-title">
-                                <a href="{{ route('articleshow', ['slug' => $article->slug]) }}">{{ $article->title }}</a>
+                                <a href="{{ route('article.show', ['slug' => $article->slug]) }}">{{ $article->title }}</a>
                             </h2>
                             <h4 class="card-text">{{ $article->excerpt }}</h4>
                             <div class="metafooter">

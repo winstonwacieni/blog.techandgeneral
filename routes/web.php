@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['as' => 'article'], function () {
+Route::group(['as' => 'article.'], function () {
     Route::get('/', [ArticlesController::class, 'index'])->name('index');
     Route::get('/article/{slug}', [ArticlesController::class, 'show'])->name('show');
 });

@@ -6,7 +6,7 @@
     </button>
     <div class="container">
         <!-- Begin Logo -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="{{ route('article.index') }}">
             <img src="{{ asset('img/favicon.svg') }}" alt="logo">
         </a>
         <!-- End Logo -->
