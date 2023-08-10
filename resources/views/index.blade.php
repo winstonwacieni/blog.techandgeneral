@@ -175,7 +175,19 @@
                                 <div class="wrapfooter">
                                     <span class="meta-footer-thumb">
                                         <a href="author.html">
-                                            <img class="author-thumb" src="https://gravatar.com/avatar/ef7263b73fcd7754229b28968a2c29c2?s=400&d=robohash&r=x" alt=" python Script"></a>
+                                            @php
+                                                // An array containing the available default options for Gravatar.
+                                                $defaultOptions = ['monsterid', 'wavatar', 'robohash', 'retro'];
+                                                // Generate a random index from the $defaultOptions array.
+                                                $randomIndex = array_rand($defaultOptions);
+                                                // Get the actual random option based on the random index.
+                                                $randomOption = $defaultOptions[$randomIndex];
+                                            @endphp
+                                            <img
+                                                src="https://www.gravatar.com/avatar/{{ md5($article->author->id) }}?d={{ $randomOption }}&s=200"
+                                                alt="Avatar"
+                                                class="author-thumb">
+                                        </a>
                                     </span>
                                     <span class="author-meta">
                                         <span class="post-name"><a href="author.html">{{ $article->author->name }}</a></span><br/>
