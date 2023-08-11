@@ -48,4 +48,11 @@ class User extends Authenticatable
     {
         return $this->hasMany(Articles::class);
     }
+
+    /**
+     * @author obrien
+     */
+    public function bookmarks() {
+        return $this->hasMany(Bookmarks::class);
+    }
 }

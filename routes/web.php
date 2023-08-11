@@ -4,6 +4,7 @@ use App\Http\Controllers\{
     ArticlesController,
     AuthorController,
 };
+use App\Http\Controllers\BookmarksController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,10 @@ Route::group(['as' => 'article.'], function () {
 
 Route::group(['as' => 'author.'], function () {
     Route::get('author/{id}', [AuthorController::class, 'show'])->name('show');
+});
+
+Route::group(['as' => 'bookmarks.'], function() {
+    Route::get('/bookmark/{article}', [BookmarksController::class, 'bookmark'])->name('bookmark');
 });
 
 Auth::routes();

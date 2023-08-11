@@ -197,135 +197,25 @@
                                         <span class="post-date">{{ ($article->created_at)->diffForHumans() }}</span>
                                         <span class="dot"></span><span class="post-read">5 min read</span>
                                     </span>
-                                    <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                                    <span class="post-read-more">
+                                     <form action="{{ route('bookmarks.bookmark', ['article' => $article->id]) }}" method="POST">
+                                        @csrf
+                                        <button type="submit" class="bookmark-button" style="background: none; border: none; cursor: pointer;">
+                                            <svg width="25" height="25" viewbox="0 0 25 25">
+                                                <path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </form>
+
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
                 <!-- end post -->
-
- {{--               <!-- begin post -->
-                <div class="card">
-                    <a href="post.html">
-                        <img class="img-fluid" src="{{ asset('img/demopic/voices-2.jpg') }}" alt="A swahili Man">
-                    </a>
-                    <div class="card-block">
-                        <h2 class="card-title"><a href="post.html">Voices of the Unseen: Preserving Endangered Languages in the Digital Age</a></h2>
-                        <h4 class="card-text">Why google Swahili keyboards are bad, and why its' your fault</h4>
-                        <div class="metafooter">
-                            <div class="wrapfooter">
-						<span class="meta-footer-thumb">
-						<a href="author.html"><img class="author-thumb" src="https://avatars.dicebear.com/v2/avataaars/ef7263b73fcd7754229b28968a2c29c2.svg" alt="Swahili Girl"></a>
-						</span>
-                                <span class="author-meta">
-						<span class="post-name"><a href="author.html">Swahili Girl</a></span><br/>
-						<span class="post-date">2 Mar 2023</span><span class="dot"></span><span class="post-read">4 min read</span>
-						</span>
-                                <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end post -->
-
-                <!-- begin post -->
-                <div class="card">
-                    <a href="post.html">
-                        <img class="img-fluid" src="{{ asset('img/demopic/colors.jpg') }}" alt="">
-                    </a>
-                    <div class="card-block">
-                        <h2 class="card-title"><a href="post.html">The Psychology of Colors in Web Design</a></h2>
-                        <h4 class="card-text">Unraveling the Impact of Hues on Our Emotions</h4>
-                        <div class="metafooter">
-                            <div class="wrapfooter">
-						<span class="meta-footer-thumb">
-						<a href="author.html"><img class="author-thumb" src="https://avatars.dicebear.com/v2/avataaars/214b7ce5a8a87eca8524d0e79d53439b.svg" alt="Mark Zuckerberg"></a>
-						</span>
-                                <span class="author-meta">
-						<span class="post-name"><a href="author.html">Mark Zuckerbarg</a></span><br/>
-						<span class="post-date">20 July 2023</span><span class="dot"></span><span class="post-read">6 min read</span>
-						</span>
-                                <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end post -->
-
-                <!-- begin post -->
-                <div class="card">
-                    <a href="post.html">
-                        <img class="img-fluid" src="{{ asset('img/demopic/8.jpg') }}" alt="">
-                    </a>
-                    <div class="card-block">
-                        <h2 class="card-title"><a href="post.html">Thinking outside the box can help you prosper</a></h2>
-                        <h4 class="card-text">The Power of Unconventional Thinking: How Embracing Creativity Drives Prosperity</h4>
-                        <div class="metafooter">
-                            <div class="wrapfooter">
-						<span class="meta-footer-thumb">
-						<a href="author.html"><img class="author-thumb" src="https://avatars.dicebear.com/v2/avataaars/5e9f38c8146628bae7a3cc2e474f4014.svg" alt="Life Coach"></a>
-						</span>
-                                <span class="author-meta">
-						<span class="post-name"><a href="author.html">@Lifecoach</a></span><br/>
-						<span class="post-date">3 May 2023</span><span class="dot"></span><span class="post-read">6 min read</span>
-						</span>
-                                <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end post -->
-
-                <!-- begin post -->
-                <div class="card">
-                    <a href="post.html">
-                        <img class="img-fluid" src="{{ asset('img/demopic/9.jpg') }}" alt="Real Estate Sideview">
-                    </a>
-                    <div class="card-block">
-                        <h2 class="card-title"><a href="post.html">10 Things you should know about choosing your house</a></h2>
-                        <h4 class="card-text">Choosing a house is more than location, as they say in real Estate. As you buy a house you also buy a home...</h4>
-                        <div class="metafooter">
-                            <div class="wrapfooter">
-						<span class="meta-footer-thumb">
-						<a href="author.html"><img class="author-thumb" src="https://avatars.dicebear.com/v2/avataaars/d56c5f9d4c9f8147ce0a457970dd6629.svg" alt="The Realtor"></a>
-						</span>
-                                <span class="author-meta">
-						<span class="post-name"><a href="author.html">The Realtor</a></span><br/>
-						<span class="post-date">22 June 2023</span><span class="dot"></span><span class="post-read">8 min read</span>
-						</span>
-                                <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end post -->
-
-                <!-- begin post -->
-                <div class="card">
-                    <a href="post.html">
-                        <img class="img-fluid" src="{{ asset('img/demopic/10.jpg') }}" alt="Welcoming gate">
-                    </a>
-                    <div class="card-block">
-                        <h2 class="card-title"><a href="post.html">Visiting the world means learning cultures</a></h2>
-                        <h4 class="card-text">Around the Globe in Cultures: Traveling as a Journey of Cultural Education</h4>
-                        <div class="metafooter">
-                            <div class="wrapfooter">
-						<span class="meta-footer-thumb">
-						<a href="author.html"><img class="author-thumb" src="https://avatars.dicebear.com/v2/avataaars/cda62a5df6b0b63e56eddcdce8e7bde5.svg" alt="Sal"></a>
-						</span>
-                                <span class="author-meta">
-						<span class="post-name"><a href="author.html">Eminem Official</a></span><br/>
-						<span class="post-date">12 feb 2023</span><span class="dot"></span><span class="post-read">9 min read</span>
-						</span>
-                                <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>--}}
-                <!-- end post -->
-
             </div>
+
         </section>
         <!-- End List Posts
         ================================================== -->
