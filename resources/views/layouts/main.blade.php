@@ -23,6 +23,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
+    {{--Imported jquery for purposes of using the toastr library--}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Custom styles for this template -->
    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -36,6 +41,37 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+@if(Session::has('success'))
+  <script>
+      toastr.options = {
+          'progressBar' : true,
+          "showMethod": "fadeIn",
+          "positionClass": "toast-bottom-right",
+          "hideMethod": "fadeOut",
+          "closeButton": true,
+          "newestOnTop": false,
+      }
+      toastr.success("{{ Session::get('success') }}");
+  </script>
+@endif
+
+@if(Session::has('error'))
+    <script>
+        toastr.options = {
+            'progressBar' : true,
+            "showMethod": "fadeIn",
+            "positionClass": "toast-bottom-right",
+            "hideMethod": "fadeOut",
+            "closeButton": true,
+            "newestOnTop": false,
+        }
+        toastr.error("{{ Session::get('error') }}");
+    </script>
+@endif
+
 </body>
 </html>
+
+
 

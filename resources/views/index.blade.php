@@ -198,7 +198,9 @@
                                         <span class="dot"></span><span class="post-read">5 min read</span>
                                     </span>
                                     <span class="post-read-more">
-                                     <form action="{{ route('bookmarks.bookmark', ['article' => $article->id]) }}" method="POST">
+                                     <form
+                                         action="{{ route('bookmarks.bookmark', ['article' => $article->id]) }}"
+                                         method="POST">
                                         @csrf
                                         <button type="submit" class="bookmark-button" style="background: none; border: none; cursor: pointer;">
                                             <svg width="25" height="25" viewbox="0 0 25 25">

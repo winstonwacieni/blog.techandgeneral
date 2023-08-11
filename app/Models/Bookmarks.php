@@ -9,11 +9,10 @@ class Bookmarks extends Model
 {
     use HasFactory;
 
-    public $fillable = ['user_id', 'article_id'];
+    protected $fillable = ['user_id', 'article_id'];
 
-    /**
-     * @author obrien
-     */
+    protected $table = 'bookmarks';
+
     public function article() {
 
         return $this->belongsTo(Articles::class);

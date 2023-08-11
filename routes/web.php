@@ -28,7 +28,7 @@ Route::group(['as' => 'author.'], function () {
 });
 
 Route::group(['as' => 'bookmarks.'], function() {
-    Route::get('/bookmark/{article}', [BookmarksController::class, 'bookmark'])->name('bookmark');
+    Route::post('/bookmark/{article}', [BookmarksController::class, 'bookmark'])->name('bookmark');
 });
 
 Auth::routes();
