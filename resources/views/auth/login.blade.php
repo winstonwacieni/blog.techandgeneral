@@ -63,9 +63,6 @@
         bottom: 0;
     }
 }
-span, li{
-    color: #fff;
-}
 
 </style>
 
@@ -77,16 +74,16 @@ span, li{
       <div class="centered-left">
           <img src="{{ asset('img/logo.png') }}" width="190px" alt="">
           <br>
-          <span style="font-size: 40pt">Welcome To Tech and General</span>
+          <span style="font-size: 40pt;color: #fff">Welcome To Tech and General</span>
           <br>
           <div>
               <div style="border-bottom: 2px solid green; display: inline-block;">
-                  <span style="font-size: 37px">Create an account to unlock these benefits</span>
+                  <span style="font-size: 37px;color: #fff">Create an account to unlock these benefits</span>
               </div>
           </div>
           <div>
               <div style="display: inline-block;">
-                  <ul style="text-align: left; padding-right: 160px; list-style-type: disc;font-size: 26px">
+                  <ul style="text-align: left; padding-right: 160px; list-style-type: disc;font-size: 26px;color: #fff">
                       <li style="padding-bottom: 10px">Comment on articles and express yourself</li>
                       <li style="padding-bottom: 10px">Manage your Newsletters</li>
                       <li style="padding-bottom: 10px">Have a personal profile</li>
@@ -100,8 +97,14 @@ span, li{
 
     <div class="split right">
       <div class="centered">
-        <h2>John Doe</h2>
-        <p>Some text here too.</p>
+          <div>
+              <img src="{{ asset('img/logo.png') }}" width="100px" alt="">
+              <br>
+              <span style="font-size: 18px">Hi, there!</span>
+          </div>
+          <div style="padding-top: 10px">
+              <strong><span style="font-size: 23px">Create an account</span></strong>
+          </div>
       </div>
     </div>
 @endsection
