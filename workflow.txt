@@ -1,19 +1,7 @@
-## Things implemented
-Created Articles migration, seeder and factory file
-        - This automates the process of creating dummy data to use for the site
-Created Single Article web route
-        - This manages the viewing of a single Article
-Installed Stevebaumans purify
-        - Putify data from database. Avoid xss exploits
-Created component for fixed left share on post page
-        - Allow breakdown of code into components
-Added animated gifs
-        - Improve intuitiveness of the site
-Added component for title
-        - To make the title dynamic
-Created view author page
-        - To view the author's specific articles
-
+A user can now bookmark
+    - He can only bookmark if logged in
+    - He cannot bookmark the same article twice
+    (At the moment I am using toastrjs to show the notifications) -> Is there a better option to this
 
 ## Discussion prompts
     - An article belongsTo a category. On the index page where should the category
