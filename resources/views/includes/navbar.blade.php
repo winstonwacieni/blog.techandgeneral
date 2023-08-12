@@ -20,7 +20,7 @@
                     <a class="nav-link" href="post.html">Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="author.html">Author</a>
+                    <a class="nav-link" href="author.html">Saved</a>
                 </li>
             </ul>
             <!-- End Menu -->
