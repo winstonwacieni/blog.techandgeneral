@@ -3,6 +3,10 @@ A user can now bookmark
     - He cannot bookmark the same article twice
     (At the moment I am using toastrjs to show the notifications) -> Is there a better option to this
 
+
+##Things to do
+    - Check up on the media query for the login page
+
 ## Discussion prompts
     - An article belongsTo a category. On the index page where should the category
       be placed to Improve on aesthestics.
