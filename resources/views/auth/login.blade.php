@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @push('styles')
-
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /* Split the screen in half */
 .split {
@@ -105,6 +106,19 @@
           <div style="padding-top: 10px">
               <strong><span style="font-size: 23px">Create an account</span></strong>
           </div>
+
+        <form action="" method="" style="font-family: 'Poppins', sans-serif;">
+            <div class="input-div">
+                <div class="i">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text"class='input'>
+                </div>
+            </div>
+        </form>
+
       </div>
     </div>
 @endsection
