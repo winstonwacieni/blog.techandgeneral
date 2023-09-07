@@ -4,6 +4,9 @@ use App\Http\Controllers\{
     ArticlesController,
     AuthorController,
 };
+
+use App\Http\Controllers\Admin\AdminController;
+
 use App\Http\Controllers\BookmarksController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +20,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::group(['as' => 'admin.'], function() {
+   Route::get('/admin', [AdminController::class, 'index'])->name('index');
+});
+
 Route::group(['middleware' => 'auth'], function() {
     Route::group(['as' => 'bookmarks.'], function() {
         Route::post('/bookmark/{article}', [BookmarksController::class, 'bookmark'])->name('bookmark');
