@@ -2,103 +2,104 @@
 
 @push('styles')
     <style>
-        .bs-icon {
-            --bs-icon-size: .75rem;
-            display: flex;
-            flex-shrink: 0;
-            justify-content: center;
-            align-items: center;
-            font-size: var(--bs-icon-size);
-            width: calc(var(--bs-icon-size) * 2);
-            height: calc(var(--bs-icon-size) * 2);
-            color: var(--bs-primary);
-        }
+   .bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
 
-        .bs-icon-xs {
-            --bs-icon-size: 1rem;
-            width: calc(var(--bs-icon-size) * 1.5);
-            height: calc(var(--bs-icon-size) * 1.5);
-        }
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
 
-        .bs-icon-sm {
-            --bs-icon-size: 1rem;
-        }
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
 
-        .bs-icon-md {
-            --bs-icon-size: 1.5rem;
-        }
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
 
-        .bs-icon-lg {
-            --bs-icon-size: 2rem;
-        }
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
 
-        .bs-icon-xl {
-            --bs-icon-size: 2.5rem;
-        }
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
 
-        .bs-icon.bs-icon-primary {
-            color: var(--bs-white);
-            background: var(--bs-primary);
-        }
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
 
-        .bs-icon.bs-icon-primary-light {
-            color: var(--bs-primary);
-            background: rgba(var(--bs-primary-rgb), .2);
-        }
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2);
+}
 
-        .bs-icon.bs-icon-semi-white {
-            color: var(--bs-primary);
-            background: rgba(255, 255, 255, .5);
-        }
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
+}
 
-        .bs-icon.bs-icon-rounded {
-            border-radius: .5rem;
-        }
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
 
-        .bs-icon.bs-icon-circle {
-            border-radius: 50%;
-        }
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
 
-/* BS theme*/
+@font-face{font-family:Lato;src:url(../../assets/fonts/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap;unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;src:url(../../assets/fonts/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Lato;src:url(../../assets/fonts/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;src:url(../../assets/fonts/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Lato;src:url(../../assets/fonts/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;src:url(../../assets/fonts/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root,[data-bs-theme=dark]{--bs-primary:#7851A9;--bs-primary-rgb:120,81,169;--bs-primary-text-emphasis:#302044;--bs-primary-bg-subtle:#E4DCEE;--bs-primary-border-subtle:#C9B9DD}.btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#7851A9;--bs-btn-border-color:#7851A9;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#664590;--bs-btn-hover-border-color:#604187;--bs-btn-focus-shadow-rgb:235,229,242;--bs-btn-active-color:#fff;--bs-btn-active-bg:#604187;--bs-btn-active-border-color:#5A3D7F;--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#7851A9;--bs-btn-disabled-border-color:#7851A9}.btn-outline-primary{--bs-btn-color:#7851A9;--bs-btn-border-color:#7851A9;--bs-btn-focus-shadow-rgb:120,81,169;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#7851A9;--bs-btn-hover-border-color:#7851A9;--bs-btn-active-color:#fff;--bs-btn-active-bg:#7851A9;--bs-btn-active-border-color:#7851A9;--bs-btn-disabled-color:#7851A9;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:#7851A9}.bs-icon{--bs-icon-size:.75rem;display:flex;flex-shrink:0;justify-content:center;align-items:center;font-size:var(--bs-icon-size);width:calc(var(--bs-icon-size) * 2);height:calc(var(--bs-icon-size) * 2);color:var(--bs-primary)}.bs-icon-xs{--bs-icon-size:1rem;width:calc(var(--bs-icon-size) * 1.5);height:calc(var(--bs-icon-size) * 1.5)}.bs-icon-sm{--bs-icon-size:1rem}.bs-icon-md{--bs-icon-size:1.5rem}.bs-icon-lg{--bs-icon-size:2rem}.bs-icon-xl{--bs-icon-size:2.5rem}.bs-icon.bs-icon-primary{color:var(--bs-white);background:var(--bs-primary)}.bs-icon.bs-icon-primary-light{color:var(--bs-primary);background:rgba(var(--bs-primary-rgb),.2)}.bs-icon.bs-icon-semi-white{color:var(--bs-primary);background:rgba(255,255,255,.5)}.bs-icon.bs-icon-rounded{border-radius:.5rem}.bs-icon.bs-icon-circle{border-radius:50%}
 
-        :root, [data-bs-theme=light] {
-            --bs-primary: #7851A9;
-            --bs-primary-rgb: 120,81,169;
-            --bs-primary-text-emphasis: #302044;
-            --bs-primary-bg-subtle: #E4DCEE;
-            --bs-primary-border-subtle: #C9B9DD;
-        }
+:root, [data-bs-theme=light] {
+  --bs-primary: #7851A9;
+  --bs-primary-rgb: 120,81,169;
+  --bs-primary-text-emphasis: #302044;
+  --bs-primary-bg-subtle: #E4DCEE;
+  --bs-primary-border-subtle: #C9B9DD;
+}
 
-        .btn-primary {
-            --bs-btn-color: #fff;
-            --bs-btn-bg: #7851A9;
-            --bs-btn-border-color: #7851A9;
-            --bs-btn-hover-color: #fff;
-            --bs-btn-hover-bg: #664590;
-            --bs-btn-hover-border-color: #604187;
-            --bs-btn-focus-shadow-rgb: 235,229,242;
-            --bs-btn-active-color: #fff;
-            --bs-btn-active-bg: #604187;
-            --bs-btn-active-border-color: #5A3D7F;
-            --bs-btn-disabled-color: #fff;
-            --bs-btn-disabled-bg: #7851A9;
-            --bs-btn-disabled-border-color: #7851A9;
-        }
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #7851A9;
+  --bs-btn-border-color: #7851A9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #664590;
+  --bs-btn-hover-border-color: #604187;
+  --bs-btn-focus-shadow-rgb: 235,229,242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #604187;
+  --bs-btn-active-border-color: #5A3D7F;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #7851A9;
+  --bs-btn-disabled-border-color: #7851A9;
+}
 
-        .btn-outline-primary {
-            --bs-btn-color: #7851A9;
-            --bs-btn-border-color: #7851A9;
-            --bs-btn-focus-shadow-rgb: 120,81,169;
-            --bs-btn-hover-color: #fff;
-            --bs-btn-hover-bg: #7851A9;
-            --bs-btn-hover-border-color: #7851A9;
-            --bs-btn-active-color: #fff;
-            --bs-btn-active-bg: #7851A9;
-            --bs-btn-active-border-color: #7851A9;
-            --bs-btn-disabled-color: #7851A9;
-            --bs-btn-disabled-bg: transparent;
-            --bs-btn-disabled-border-color: #7851A9;
-        }
+.btn-outline-primary {
+  --bs-btn-color: #7851A9;
+  --bs-btn-border-color: #7851A9;
+  --bs-btn-focus-shadow-rgb: 120,81,169;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7851A9;
+  --bs-btn-hover-border-color: #7851A9;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #7851A9;
+  --bs-btn-active-border-color: #7851A9;
+  --bs-btn-disabled-color: #7851A9;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #7851A9;
+}
+
 
 
     </style>
@@ -107,11 +108,11 @@
 
 
 @section('content')
-    <section class="position-relative py-4 py-xl-5">
+<section class="position-relative py-4 py-xl-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Sign in</h2>
+                    <h2>Log in</h2>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -121,13 +122,10 @@
                             <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
                                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
                                 </svg></div>
-                            <form class="text-center" method="post" action="{{ route('login') }}">
-
-                                @csrf
-
+                            <form class="text-center" method="post">
                                 <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
                                 <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                                <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">SIGN IN&nbsp;</button></div>
+                                <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">SIGN IN&nbsp;</button></div><span class="spinner-border spinner-border-sm" role="status"></span>
                                 <p class="text-muted">Forgot your password?</p>
                                 <p class="text-muted">Sign Up instead</p>
                                 <section></section>
@@ -144,7 +142,7 @@
                 <div class="col">
                     <p class="text-muted my-2">Copyright&nbsp;© 2023 TechandGeneral</p>
                 </div>
-                <!--<div class="col">
+                <div class="col">
                     <ul class="list-inline my-2">
                         <li class="list-inline-item me-4">
                             <div class="bs-icon-circle bs-icon-primary bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
@@ -162,7 +160,7 @@
                                 </svg></div>
                         </li>
                     </ul>
-                </div>-->
+                </div>
                 <div class="col">
                     <ul class="list-inline my-2">
                         <li class="list-inline-item"><a class="link-secondary" href="#">Privacy Policy</a></li>
@@ -172,5 +170,9 @@
             </div>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
 @endsection

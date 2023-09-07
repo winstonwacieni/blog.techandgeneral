@@ -1,9 +1,12 @@
-:root, [data-bs-theme=dark] {
+:root, [data-bs-theme=light] {
   --bs-primary: #7851A9;
   --bs-primary-rgb: 120,81,169;
   --bs-primary-text-emphasis: #302044;
   --bs-primary-bg-subtle: #E4DCEE;
   --bs-primary-border-subtle: #C9B9DD;
+  --bs-link-color: #7851A9;
+  --bs-link-color-rgb: 120,81,169;
+  --bs-link-decoration: line-through;
 }
 
 .btn-primary {
