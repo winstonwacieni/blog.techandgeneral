@@ -8,6 +8,18 @@
     <link rel="icon" href="{{ asset('img/favicon.svg') }}">
     <title>The TechGeneralist Blog [TG] |  @yield('title') </title>
 
+    <link rel="canonical" href="https://techandgeneral.com/">
+    <meta property="og:url" content="https://techandgeneral.com/">
+    <meta name="description" content="The TechandGeneral Blog">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "TechandGeneral",
+            "url": "https://techandgeneral.com"
+        }
+    </script>
+
     <!-- Latest compiled and minified CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
