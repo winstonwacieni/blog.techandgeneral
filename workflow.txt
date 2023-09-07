@@ -25,3 +25,7 @@ Author<----->Post
   - An author hasMany posts
   - A post belongsTo one author
 
+- In the future each author will also be linked to his project on the platform - projects.techandgeneral.com
+
+add remote on tg domain
+ 
