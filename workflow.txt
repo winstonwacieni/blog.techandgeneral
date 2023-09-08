@@ -33,3 +33,7 @@ Author<----->Post
   - An author hasMany posts
   - A post belongsTo one author
 
+- Change everything to soft purple theme
+- Change blog theme to TG color scheme
+- Create new .svg Logo
+- Standardise nav
