@@ -37,3 +37,17 @@ Author<----->Post
 - Change blog theme to TG color scheme
 - Create new .svg Logo
 - Standardise nav
+- Clean up img naming
+
+
+Commit Notes: Login UI Improvements
+While working on the UI I am getting more used to
+blade templating but in the future when intergrating complex 
+interactions e.g three.js I will need your input.
+
+I want to improve the UI of the main page and start work on the admin pages, 
+although I do note that we have the lazy loading feature to impliment, basically 
+the new changes will just be a copy of the current website just with modern rounded 
+UI using bootstrap 5. 
+
+Sep 12, 2023 1.12AM 

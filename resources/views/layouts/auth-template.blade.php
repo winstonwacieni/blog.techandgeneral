@@ -1,14 +1,15 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="dark">
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Schema --->
-
-    <link rel="canonical" href="https://techandgeneral.com/">
-    <meta property="og:url" content="https://techandgeneral.com/">
-    <meta name="description" content="The TechandGeneral Blog Log in ">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="{{ asset('img/favicon.svg') }}">
+    <title>Tech Generalist | log In</title>
+    <link rel="canonical" href="https://techandgeneral.com/untitled.html">
+    <meta property="og:url" content="https://techandgeneral.com/untitled.html">
+    <meta name="description" content="A tech focused blog">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -17,21 +18,25 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <script src="">
+
+    </script>
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js', 
-    'resources/login/assets/bootstrap/css/bootstrap.min.css?h=c5ba9a8f0ac973bda30d88842303e247',  
-    'resources//assets/css/Lato.css?h=9337dfadb24cb1293b2017d5b289c139',  
-    'resources/assets/css/Work%20Sans.css?h=d7356b0414dc71e38a44c297f70c8a76',  
-    'resources/assets/css/bs-theme-overrides.css?h=079d07320d26e64b94ae4c6363d2758e',  
-    'resources/assets/css/Login-Form-Basic-icons.css?h=befd8a398792e305b7ffd4a176b5b585',   ])
+    @vite([
+        'resources/css/swiper-icons.css',
+        'resources/css/Navbar-Right-Links-Dark-icons.css', 
+        'resources/css/Simple-Slider-swiper-bundle.min.css',
+        'resources/css/Simple-Slider.css',
+        'resources/bootstrap/css/bootstrap.min.css', 
+    ])
 
     @stack('styles')
 
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <!-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -41,14 +46,14 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                    <!-- Left Side Of Navbar --> <!--
                     <ul class="navbar-nav me-auto">
 
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
+                        <!-- Authentication Links --><!--
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -83,7 +88,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
         <main class="py-4">
             @yield('content')
@@ -94,7 +99,9 @@
     @push('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="resources/js/bold-and-dark.js"></script>
+    <script src="resources/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="resources/js/Simple-Slider.js"></script>
  @endpush
 
 </body>
